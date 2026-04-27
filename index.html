@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Şef Kebap | Konsept 3 (Otantik & Doğal)</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,400&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="main-header">
+        <div class="container header-container">
+            <div class="logo" style="display: flex; align-items: center; gap: 15px;">
+                <img src="../1/logo.png" alt="Şef Kebap Logo" class="logo-img">
+                <span style="font-family: var(--font-heading); font-size: 2.2rem; font-weight: bold; color: var(--text-light);">Şef Kebap</span>
+            </div>
+            
+            <nav class="navbar">
+                <ul class="nav-menu">
+                    <li><a href="#anasayfa">Ocağımız</a></li>
+                    <li><a href="#hikayemiz">Ustalığımız</a></li>
+                    <li><a href="#menu">Lezzetlerimiz</a></li>
+                </ul>
+                <a href="#iletisim" class="btn-rustic">Bize Ulaşın</a>
+            </nav>
+
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="anasayfa" class="hero">
+        <div class="hero-bg"></div>
+        <div class="container hero-content">
+            <h1 class="fade-in">Ateşin<br>Hasından.</h1>
+            <p class="fade-in delay-1">Yıllanmış meşe odunu, hakiki zırh kıyması ve ustanın el emeği. Gerçek kebap deneyimine hoş geldiniz.</p>
+            <a href="#menu" class="btn-rustic btn-large fade-in delay-2">Menüyü İncele</a>
+        </div>
+    </section>
+
+    <!-- Hikayemiz (Rustic Style) -->
+    <section id="hikayemiz" class="story-section section-padding">
+        <div class="container">
+            <div class="story-grid">
+                <div class="story-text fade-in-left">
+                    <span class="ornament">~ Bizim Hikayemiz ~</span>
+                    <h2>Geçmişten Günümüze Gelenek.</h2>
+                    <p>Adana'nın sıcak mutfaklarından çıkıp sofralarınıza uzanan bu yolculukta, hiçbir zaman makineye el sürmedik. Etimizi her sabah taze seçer, saatlerce dinlendirir ve sadece zırh bıçağıyla çekeriz.</p>
+                    <p>Babagannuştan künefeye kadar her bir lezzetimiz, yörenin en iyi malzemeleriyle el emeğiyle hazırlanır.</p>
+                </div>
+                <div class="story-images fade-in-right">
+                    <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800" alt="Kebap Yapımı" class="img-main">
+                    <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=800" alt="Izgara Ateşi" class="img-sub">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Menü (Otantik Pano) -->
+    <section id="menu" class="menu-section section-padding">
+        <div class="container text-center">
+            <span class="ornament">~ Özel Tarifler ~</span>
+            <h2 class="section-title">Ocağımızdan Çıkanlar</h2>
+            
+            <div class="menu-filters fade-in">
+                <button class="filter-btn active" data-filter="all">Soframız</button>
+                <button class="filter-btn" data-filter="kebap">Kebaplar</button>
+                <button class="filter-btn" data-filter="meze">Mezeler</button>
+            </div>
+
+            <div class="menu-board fade-in delay-1">
+                <!-- Kebap 1 -->
+                <div class="menu-item" data-category="kebap">
+                    <div class="item-img-box">
+                        <img src="https://images.unsplash.com/photo-1544025162-d76694265947?q=80&w=800" alt="Zırh Kıyma">
+                    </div>
+                    <div class="item-info">
+                        <h3>Hakiki Zırh Kıyma Adana</h3>
+                        <p>Köz sebzeler ve soğan salatası eşliğinde</p>
+                    </div>
+                    <div class="item-price">450 ₺</div>
+                </div>
+
+                <!-- Kebap 2 -->
+                <div class="menu-item" data-category="kebap">
+                    <div class="item-img-box">
+                        <img src="https://images.unsplash.com/photo-1555939594-58d7cb561ad1?q=80&w=800" alt="Kuzu Şiş">
+                    </div>
+                    <div class="item-info">
+                        <h3>Marine Kuzu Şiş</h3>
+                        <p>Lavaş üzerinde lokum gibi kuzu parçaları</p>
+                    </div>
+                    <div class="item-price">520 ₺</div>
+                </div>
+
+                <!-- Meze 1 -->
+                <div class="menu-item" data-category="meze">
+                    <div class="item-img-box">
+                        <img src="humus.jpg" alt="Humus">
+                    </div>
+                    <div class="item-info">
+                        <h3>Tereyağlı Humus</h3>
+                        <p>Odun ateşinde ısıtılmış tereyağı ile</p>
+                    </div>
+                    <div class="item-price">160 ₺</div>
+                </div>
+
+                <!-- Meze 2 -->
+                <div class="menu-item" data-category="meze">
+                    <div class="item-img-box">
+                        <img src="salata.jpg" alt="Gavurdağı">
+                    </div>
+                    <div class="item-info">
+                        <h3>Gavurdağı</h3>
+                        <p>Taze ceviz ve hakiki nar ekşisi ile harmanlanmış</p>
+                    </div>
+                    <div class="item-price">140 ₺</div>
+                </div>
+
+                <!-- Tatlı 1 -->
+                <div class="menu-item" data-category="tatli">
+                    <div class="item-img-box">
+                        <img src="künefe.jpg" alt="Künefe">
+                    </div>
+                    <div class="item-info">
+                        <h3>Hatay Künefesi</h3>
+                        <p>Köz ateşinde pişmiş, bol peynirli</p>
+                    </div>
+                    <div class="item-price">180 ₺</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="iletisim" class="rustic-footer">
+        <div class="container footer-content">
+            <div class="footer-logo">
+                <img src="../1/logo.png" alt="Şef Kebap Logo" class="logo-img-large">
+            </div>
+            <div class="footer-details">
+                <h4>Şef Kebap</h4>
+                <p>Seyhan, Adana</p>
+                <p><strong>Rezervasyon:</strong> 0532 999 88 77</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Şef Kebap. Konsept 3 (Otantik & Doğal Tema)</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
